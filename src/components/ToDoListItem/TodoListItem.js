@@ -4,52 +4,55 @@ import './TodoListItem.css';
 export default class TodoListItem extends Component{
 
   state = {
-    done: true
+    done: false,
+    important: false
   }
 
   onLabelClick = () => {
-    const { done } = this.state;
-    if (done) {
-      this.setState({
-        done: false
-      });
-    } else {
-      this.setState({
-        done: true
-      });
-    }
+    this.setState((state) => ({
+      done: !state.done
+    }))
+  }
 
-  };
+  onExclamationClick = () => {
+    this.setState((state) => ({
+        important: !state.important
+    }))
+  }
 
   render() {
-    const {label, important = false} = this.props
-    const { done } = this.state;
+    const {label} = this.props
+    const { done, important} = this.state;
 
     let classNames = 'todo-list-item'
     if(done) {
       classNames += ' done'
     }
 
-    const style = {
-      color: important ? 'steelblue': 'black',
-      fontWeight: important ? 'bold': 'normal'
-    };
+    if (important) {
+      classNames += ' important';
+    }
+
 
     return (
       <span className={classNames}>
         <span
-          style={style}
           className="todo-list-item-label"
           onClick={this.onLabelClick} >
           {label}
         </span>
 
-        <button type="button"
-            className="btn btn-outline-success">
+        <button
+          type="button"
+          className="btn btn-outline-success"
+          onClick={this.onExclamationClick}
+        >
           <i className="fa fa-exclamation"/>
         </button>
-        <button type="button"
-            className="btn btn-outline-danger">
+        <button
+          type="button"
+          className="btn btn-outline-danger"
+        >
           <i className="fa fa-trash-o"/>
         </button>
         </span>
