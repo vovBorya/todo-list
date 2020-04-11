@@ -1,0 +1,25 @@
+.divSearch {
+    display: inline-block;
+}
+
+.search-input {
+    width: auto;
+    height: 38px;
+    flex-grow: 1;
+    padding-left: 10px;
+    margin-right: 3px;
+}
+
+.btnSearch {
+    border: none;
+    height: 38px;
+    width: 38px;
+    cursor: pointer;
+    background-color: #008B8B;
+}
+.btnSearch:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #F9F0DA;
+}
