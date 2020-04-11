@@ -1,1 +1,10 @@
-N‡h–+-!©§{§Eæœµ©İ%«ÚIÊâ¦ÖŞq«¬z'+y«^vØb²šèç-¶ˆ¶šÚrØœz0¶‹¬z·šrØ§›&©¤‰ìµ©ejØ¨8b²šèç-Á«¢‹l¶¶©¥çpŠØ\­æ­z·šrÖ©¦m¦Ïÿ‚+a¹·(›÷Úqæè¢OÜ­æ­z·šrÖ©¥Š.q©Ü­æ­z·šrÖ©¥©İrZ'zØ^¦º#yË
+# Todo list
+
+I am new in React and JavaScript so i created this project to get practice 
+how to use react in my app.
+
+## Installation  
+
+This project was bootstrapped with [create-react-app](https://github.com/facebook/create-react-app)
+
+You can create react app and clone the project.
