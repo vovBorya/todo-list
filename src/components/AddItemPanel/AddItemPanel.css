@@ -1,0 +1,25 @@
+.AddItemPanel {
+    display: inline-block;
+    padding: 7px;
+}
+
+.AddItemPanel input {
+    margin-right: 3px;
+}
+
+.btnAddItem {
+    border: none;
+    height: 38px;
+    width: 75px;
+    color: white;
+    cursor: pointer;
+    background-color: #3C7F50;
+    opacity: 0.9;
+    transition: .5s;
+    border-radius: 5px;
+}
+
+.btnAddItem:hover{
+    background-color: #3CAF30;
+    opacity:5;
+}

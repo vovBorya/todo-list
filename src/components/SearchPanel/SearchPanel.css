@@ -1,5 +1,6 @@
 .divSearch {
     display: inline-block;
+    margin-right: 5px;
 }
 
 .search-input {
@@ -8,6 +9,7 @@
     flex-grow: 1;
     padding-left: 10px;
     margin-right: 3px;
+    border-radius: 5px;
 }
 
 .btnSearch {
@@ -16,6 +18,7 @@
     width: 38px;
     cursor: pointer;
     background-color: #008B8B;
+    border-radius: 5px;
 }
 .btnSearch:before {
     content: "\f002";
