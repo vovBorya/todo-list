@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './TodoListItem.css';
 
-export default class TodoListItem extends Component{
+export default class TodoListItem extends Component {
 
   state = {
     done: false,
