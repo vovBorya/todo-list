@@ -3,11 +3,29 @@ import './AddItemPanel.css';
 
 export default class AddItemPanel extends Component {
 
+  state = {
+    label: ''
+  }
+
+  onLabelChange = (e) => {
+    this.setState({
+      label: e.target.value
+    })
+  }
+
+  onSubmit = (e) => {
+    e.preventDefault();
+    this.props.onAddItem(this.state.label);
+  }
+
   render() {
     const { onAddItem } = this.props;
 
     return (
-      <form className="AddItemPanel d-flex">
+      <form
+        className="AddItemPanel d-flex"
+        onSubmit={this.onSubmit}
+      >
         <input type="text" id="add"
                placeholder={"task name"}
                className="form-control"
@@ -15,7 +33,6 @@ export default class AddItemPanel extends Component {
         />
         <button
           className="btn btn-outline-secondary"
-          onClick={() => onAddItem('df')}
         >
           Add task</button>
       </form>
