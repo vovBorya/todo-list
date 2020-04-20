@@ -22,8 +22,6 @@ export default class AddItemPanel extends Component {
   }
 
   render() {
-    const { onAddItem } = this.props;
-
     return (
       <form
         className="AddItemPanel d-flex"
